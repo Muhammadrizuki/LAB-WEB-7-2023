@@ -1,0 +1,56 @@
+.navbar .container {
+    padding-left: 2.5rem;
+}
+
+.navbar .collapse .navbar-nav {
+    padding-right: 5rem;
+}
+
+.vidio .container {
+    margin-top: 4.8rem;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.about .container {
+    min-width: 100%;
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+}
+
+.about .content {
+    margin-top: 0;
+    min-width: 100%;
+}
+
+.albums .container {
+    min-width: 100%;
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+}
+
+.preorder .container {
+    min-width: 100%;
+}
+
+.preorder .container .containerpre{
+    min-width: 100%;
+    position: absolute; /* Mengatur posisi absolut */
+    top: 3cm; /* Menempel di bagian atas elemen container */
+    left: 0; /* Menempel di bagian kiri elemen container */
+    z-index: 1;
+}
+
+form .btn {
+    background-color: #ffffff;
+}
+
+form .btn:hover {
+    background-color: rgb(222, 222, 222);
+    color: #000;
+}
+
+.icon-footer i {
+    color: #312005;
+    transition: 0.2s;
+}
