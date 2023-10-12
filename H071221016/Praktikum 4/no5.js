@@ -10,3 +10,4 @@ while (true) {
 }
 
 console.log(binary);
+

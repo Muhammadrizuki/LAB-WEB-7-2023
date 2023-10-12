@@ -24,3 +24,11 @@ function bubbleSort(arr) {
   bubbleSort(array)
   console.log(array); 
 
+  // var n = arr.length; menyimpan panjang kata
+  // var swapped; ini menandai adanya pergseran
+  // if (arr[i] > arr[i + 1]) { pengkondisian  apakah indek 0 lebih besar dari indeks satu
+  // var temp = arr[i]; kl lebih besar maka akan disimpan ke variabel temp 
+  // arr[i] = arr[i + 1];akan di tempa oleh indeks ke satu dan begitu pula sebaliknya
+  // swapped = true; jika memenuhi kondisi maka akan dijalankan
+// } while (swapped);akan terus dijalankan sampai data habis
+  

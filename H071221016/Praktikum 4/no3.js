@@ -13,3 +13,8 @@ if (isPalindrome(kata)) {
 } else {
   console.log(kata + " bukan palindrom.");
 }
+// penjelasan kode
+// polindrom itu kata yang dibaca terbalik juga sama bacaannya ketika dibaca normal.
+// word = word.replace(/\s/g, "").toLowerCase(); ini menghapus spasi pada kata yang kita input kemudian
+// diubah ke huruf kecil pada kode toLowerCase().
+//mengecek apakah indeks dari for tidak sama dengan panjang kata -1 i nya 
