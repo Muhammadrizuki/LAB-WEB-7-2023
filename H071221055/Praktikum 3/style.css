@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+
+.navbar{
+    display: flex;
+    margin: 0;
+    padding: 3px;
+    background-color: #dab4d9;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 99999;
+}
+
+.vid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+    flex-wrap: wrap;
+    text-align: center;
+}
+.vid1 .vid2 video{
+    width: 100%;
+    border-radius: 35px;
+    padding: 2rem 0rem 2rem;
+    transition: 1s;
+    text-align: center;
+    position: relative;
+}
+
+.photo{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.photo .box img{
+    width: 100%;
+    border-radius: 35px;
+    padding: 25px;
+    transition: 1s;
+    text-align: center;
+    position: relative;
+}
+.photo .box img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.sparkle {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.row1 img {
+  max-width: 100%; /* Membuat gambar tidak melebihi lebar parent */
+  max-height: 100%; /* Membuat gambar tidak melebihi tinggi parent */
+}
+
+
+.col{
+    display: grid;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.col .card {
+  overflow: hidden; /* Mengatur overflow ke hidden untuk memotong bagian gambar yang melebihi batas card */
+}
+
+.col .card img{
+    transition: 1s;
+    position: relative;
+}
+
+.col .card img:hover{
+    transform: scale(1.1);
+}
+
+footer{
+    background-color: #dab4d9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+
+}
+
+.instagram img{
+    display: flex;
+    align-items: center;
+    width: 70px;
+    flex-direction: column;
+}
+
+
+
+
+/* @media screen and (max-width: 768px) {
+    footer {
+        flex-direction: column; 
+        text-align: center; 
+    }
+    .freki{
+        justify-content: center;
+        display: flex;
+    }
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
