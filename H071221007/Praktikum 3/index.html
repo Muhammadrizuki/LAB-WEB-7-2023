@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <h4>GasPakeZ</h4>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ms-auto d-flex gap-4">
+                    <a class="nav-link active" href="#">Home</a>
+                    <a class="nav-link active" href="#tWisata">Tempat Wisata</a>
+                    <a class="nav-link active" href="#pMereka">Pendapat Mereka</a>
+                    <a class="nav-link active" href="#tKami">Tentang Kami</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- carousel -->
+    <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            <!-- <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                aria-label="Slide 4"></button> -->
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="Gallery/pantai-bali.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Pantai Bali</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="Gallery/maldives.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Maldives</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, velit?</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="Gallery/raja-ampat.jpg" class="d-block w-100 h-50" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Raja Ampat</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+            <!-- <div class="carousel-item">
+                <img src="Gallery/air-terjun-pincuni.jpg" class="d-block w-100 h-50" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Raja Ampat</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div> -->
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <figure class="text-center p-4 bg-success-subtle">
+        <blockquote class="blockquote h1-header px-1">
+            <h2 class="p-3">Jelajahi Dunia Lebih Jauh<br>Bersama Kami</h2>
+            <button type="button" class="btn btn-success">
+                <h5>
+                    Jelajahi >>
+                </h5>
+            </button>
+            <!-- <h2 class="text-success">Jelajahi Dunia Lebih Jauh<br>Bersama Kami</h2> -->
+        </blockquote>
+    </figure>
+
+
+    <div class="place p-5" id="tWisata">
+        <center>
+            <h3>Tempat Wisata</h3>
+        </center>
+        <div class="row row-cols-1 row-cols-md-3 g-4 z-4 p-4">
+            <div class="col">
+                <div class="card">
+                    <img src="Gallery/Pulau-Larea-Rea.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Pulau Larea-Rea</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde error nulla
+                            molestiae dicta sit numquam illo ipsam ut dolorem vel?.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="Gallery/tongke-tongke.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Hutan Mangrove Tongke-Tongke</h5>
+                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut consequatur
+                            laborum totam aliquam ab. Quaerat alias dicta ducimus delectus.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="Gallery/gojeng.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Taman Purbakala Batupake Gojeng</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur assumenda
+                            placeat necessitatibus aut enim pariatur quas, reprehenderit vel animi.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="Gallery/pattiro-tiroang.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Taman Pattiro-Tiroang</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, culpa
+                            perferendis. Quidem, mollitia numquam alias quae nesciunt quam voluptate.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="Gallery/rumah-karampuang.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Rumah Adat Karampuang</h5>
+                        <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint eveniet
+                            atque provident modi ab, soluta impedit cumque nobis?</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="Gallery/benteng.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Benteng Balangnipa</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente quam
+                            nobis voluptates fuga dolores hic consequatur unde nisi magnam doloribus!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="Gallery/sinjai-galung.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Kampung Galung</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae nemo totam
+                            ullam praesentium quisquam, quasi aut? Placeat aspernatur similique distinctio.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="Gallery/air-terjun-barania.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Air Terjun Barania</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, vel
+                            assumenda. Quasi aliquam ab amet magni accusamus suscipit, a nostrum!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="Gallery/air-terjun-pincuni.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Air Terjun Pincuni</h5>
+                        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente quo
+                            eaque, ad accusamus sit praesentium, tempora nihil consectetur unde obcaecati quasi.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="Gallery/hubat.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Pantai Hubat</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum placeat
+                            facere et alias dolorum perspiciatis porro.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="Gallery/mallenreng.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Pantai Mallenreng</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa corporis
+                            tempore ex a officia, aspernatur doloremque temporibus.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="Gallery/bukit-vandiam.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Bukit Vandiam</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi optio nisi
+                            voluptatum quasi inventore facere. Obcaecati numquam neque voluptas?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    <div class="place p-5 justify-content-center" id="pMereka">
+        <center>
+            <h3 class="p-3">Pendapat Mereka Tentang Kita</h4>
+        </center>
+        <div class="row row-cols-1 row-cols-md-3 g-4 z-4 p-4 justify-content-center">
+            <div class="card border-success mb-3 m-3" style="max-width: 18rem;">
+                <div class="card-header">09/11/2023</div>
+                <div class="card-body text-success">
+                    <h5 class="card-title">Si Fulan</h5>
+                    <p class="card-text">Ini sangat membantu Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        Quas dicta culpa amet incidunt.</p>
+                </div>
+            </div>
+            <div class="card border-success mb-3 m-3" style="max-width: 18rem;">
+                <div class="card-header">02/12/2023</div>
+                <div class="card-body text-success">
+                    <h5 class="card-title">Fulana Binti Fulan</h5>
+                    <p class="card-text">Sanget menyenangkan menggunakannya Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Quo esse quisquam sunt tenetur? Voluptas nesciunt animi aut in? Eaque, quis.
+                        Sint.</p>
+                </div>
+            </div>
+            <div class="card border-success mb-3 m-3" style="max-width: 18rem;">
+                <div class="card-header">07/12/2023</div>
+                <div class="card-body text-success">
+                    <h5 class="card-title">La Fulan</h5>
+                    <p class="card-text">mudah untuk digunakan Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Praesentium, accusantium!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    <footer class="pt-70 pb-100 bg-success-subtle text-center footer_2" id="tKami">
+        <div class="container px-xl-0">
+            <div class="row justify-content-center">
+                <div class="row row-cols-md-4 justify-content-center p-5">
+                    <div class="col-3 lh-40">
+                        <p class="justify">Instagram<br><br>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                            Animi magni tenetur minus non. Dicta architecto eius vero soluta dolorum alias debitis.</p>
+                    </div>
+                    <div class="col-3 lh-40">
+                        <p>Facebook<br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos sapiente
+                            suscipit rerum repudiandae.</p>
+                    </div>
+                    <div class="col-3 lh-40">
+                        <p>Youtube<br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint sapiente porro
+                            possimus quaerat aliquid maxime atque quasi. Illo labore facilis explicabo voluptates
+                            exercitationem mollitia!</p>
+                    </div>
+                    <div class="col-3 lh-40">
+                        <p>Twitter<br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni sit ipsa,
+                            laborum voluptatem omnis placeat reiciendis inventore!</p>
+                    </div>
+                </div>
+                <div class="mt-20 col-12 p-4" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="color-primary text-adaptive f-18">
+                        <h6>Copyright 27-09-2023 Developed with Iswaariy</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
