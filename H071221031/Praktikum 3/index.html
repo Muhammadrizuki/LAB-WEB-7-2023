@@ -1,0 +1,408 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="img/logo.png" alt="Logo" style="width: 40px;" class="rounded-pill">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#players">Players</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">More</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="https://www.realmadrid.com/en/football">Club Information</a></li>
+                <li><a class="dropdown-item" href="https://www.realmadrid.com/en/about-real-madrid/history/football/2021-2030">Club History</a></li>
+                <li><a class="dropdown-item" href="https://www.realmadrid.com/en/bernabeu-stadium">Stadium</a></li>
+                <li><a class="dropdown-item" href="https://www.realmadrid.com/en/football/academy">Real Madrid Academy</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+<!-- Navbar -->
+
+<!-- Corousel -->
+<div id="carouselExampleCaptions" class="carousel slide">
+  <div class="carousel-indicators">    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="img/2.jpg" class="d-block w-100" alt="gambar" style="height: 600px; width: auto;">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Stadium Santiago Bernabeu</h5>
+        <p>Santiago Bernabéu Stadium is one of the most iconic football stadiums in the world, located in Madrid, Spain.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="img/1.jpg" class="d-block w-100" alt="gambar"style="height: 600px; width: auto;">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>King Uefa Champions League </h5>
+        <p>Real Madrid has a rich history of success in the UEFA Champions League, often emerging as champions of this prestigious European competition.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="img/4.jpg" class="d-block w-100" alt="gambar"style="height: 600px; width: auto;">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>The Bigest Player In The world</h5>
+        <p>Cristiano Ronaldo has won the Ballon d'Or award five times, showcasing his exceptional talent and consistency in the world of football.</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<!-- About Real Madrid -->
+    <section class="about bg-light" id="about">
+        <div class="container">
+          <div class="row pt-3 pb-3">
+            <div class="col">
+            <h4 class="text-center">Real Madrid</h4>
+            </div>
+          </div>
+          <div class="row justify-content-center text-justify pb-5">
+            <div class="col-md-5">
+              <p class="text-justify">Real Madrid, often referred to as Los Blancos, stands as one of the most illustrious and storied football clubs on the planet. Hailing from the vibrant city of Madrid, Spain, this iconic football institution boasts a history that reads like a tale of triumph, with its hallmark being an unwavering commitment to excellence.</p>
+            </div>
+            <div class="col-md-5">
+              <p class="text-justify">The club's impressive trophy cabinet is a testament to its unparalleled success, featuring a multitude of domestic and international titles. Real Madrid has consistently demonstrated its prowess in competitions such as La Liga, the UEFA Champions League, and the Copa del Rey, etching its name into football history.</p>
+        </div>
+            <div class="col-md-5">
+            <p class="text-justify">With a fervently devoted fan base that spans the globe, the Santiago Bernabéu Stadium becomes a cauldron of excitement and passion during matches. This historic venue has witnessed countless memorable moments and the heroic exploits of legendary players who've donned the iconic white jersey.</p>
+        </div>
+        <div class="col-md-5">
+            <p class="text-justify">From the days of Di Stefano and Puskás to the more recent era of Cristiano Ronaldo and Sergio Ramos, Real Madrid has been graced by footballing luminaries who've left an indelible mark on the sport. The club's Galacticos philosophy, characterized by the acquisition of world-class talent, has consistently captivated the footballing world.</p>
+        </div>
+    </div>
+  </section>
+<!-- About Real Madrid-->
+
+<!-- player rel madrid -->
+      <div class="team-grid">
+        <div class="container">
+          <div class="intro">
+            <h2 id="players"  class="text-center"> Meet Our Players</h2>
+            <p class="text-center">Here is our current squad lineup</p>
+          </div>
+        
+        <div class="player-category">
+          <h3 class="text-center">Kiper</h3>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card">
+                <img src="img/player1.jpg" class="card-img-top" alt="...">
+                <div class="card-body bg-warning">
+                  <p class="card-text">1</p>
+                  <p class="name-player"> THIBAUT COURTOIS</p>
+                </div>
+              </div>
+            </div>
+
+              
+            <div class="col-md-4">
+              <div class="card">
+                <img src="img/Player2.jpg" class="card-img-top" alt="...">
+                <div class="card-body bg-warning">
+                  <p class="card-text">13</p>
+                  <p class="name-player"> ANDREY LUNIN</p>
+                </div>
+              </div>
+            </div>
+              
+            <div class="col-md-4">
+              <div class="card">
+                <img src="img/Player3.jpg" class="card-img-top" alt="...">
+                <div class="card-body bg-warning">
+                  <p class="card-text">25</p>
+                  <p class="name-player">KEPA</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        <div class="player-category">
+          <h3 class="text-center">Bek</h3>
+          <div class="row">
+            <div class="col-md-3">
+              <div class="card mb-4">
+                <img src="img/Player4.jpg" class="card-img-top" alt="...">
+                <div class="card-body bg-warning">
+                  <p class="card-text">2</p>
+                  <p class="name-player">D. CARVAJAL</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <div class="card">
+                <img src="img/Player5.jpg" class="card-img-top" alt="...">
+                <div class="card-body bg-warning">
+                  <p class="card-text">3</p>
+                  <p class="name-player">E. MILITAO</p>
+                </div>
+              </div>
+            </div>
+        
+            <div class="col-md-3">
+              <div class="card">
+                <img src="img/Player6.jpg" class="card-img-top" alt="...">
+                <div class="card-body bg-warning">
+                  <p class="card-text">4</p>
+                  <p class="name-player">DAVID ALABA</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <div class="card">
+                <img src="img/Player7.jpg" class="card-img-top" alt="...">
+                <div class="card-body bg-warning">
+                  <p class="card-text">6</p>
+                  <p class="name-player">NACHO H</p>
+                </div>
+              </div>
+            </div>
+          
+
+            <div class="col-md-3">
+              <div class="card">
+                <img src="img/Player8.jpg" class="card-img-top" alt="...">
+                <div class="card-body bg-warning">
+                  <p class="card-text">17</p>
+                  <p class="name-player">LUCAS VARQUEZ</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-md-3">
+              <div class="card">
+                <img src="img/Player9.jpg" class="card-img-top" alt="...">
+                <div class="card-body bg-warning">
+                  <p class="card-text">20</p>
+                  <p class="name-player">FRAN GARCIA</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-md-3">
+              <div class="card">
+                <img src="img/Player10.jpg" class="card-img-top" alt="...">
+                <div class="card-body bg-warning">
+                  <p class="card-text">20</p>
+                  <p class="name-player">ANTONIO RUDIGER</p>
+                </div>
+              </div>
+            </div>
+        
+            <div class="col-md-3">
+              <div class="card">
+                <img src="img/Player11.jpg" class="card-img-top" alt="...">
+                <div class="card-body bg-warning">
+                  <p class="card-text">23</p>
+                  <p class="name-player">FERLAND MENDY</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="player-category ">
+          <h3 class="text-center">Pemain Tengah</h3>
+          <div class="row">
+            <div class="col-md-3">
+              <div class="card mb-4">
+                <img src="img/Player12.jpg" class="card-img-top" alt="...">
+                <div class="card-body bg-warning">
+                  <p class="card-text">5</p>
+                  <p class="name-player">BELLINGHAM</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <div class="card">
+                <img src="img/Player13.jpg" class="card-img-top" alt="...">
+                <div class="card-body bg-warning">
+                  <p class="card-text">8</p>
+                  <p class="name-player">TONI KROOS</p>
+                </div>
+              </div>
+            </div>
+        
+            <div class="col-md-3">
+              <div class="card">
+                <img src="img/Player14.jpg" class="card-img-top" alt="...">
+                <div class="card-body bg-warning">
+                  <p class="card-text">10</p>
+                  <p class="name-player">L. MODRIC</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <div class="card">
+                <img src="img/Player15.jpg" class="card-img-top" alt="...">
+                <div class="card-body bg-warning">
+                  <p class="card-text">24</p>
+                  <p class="name-player">ARDA GULER</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="row">
+            <div class="col-md-3">
+              <div class="card">
+                <img src="img/Player16.jpg" class="card-img-top" alt="...">
+                <div class="card-body bg-warning">
+                  <p class="card-text">12</p>
+                  <p class="name-player">E. CAMAVINGA</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-md-3">
+              <div class="card">
+                <img src="img/Player17.jpg" class="card-img-top" alt="...">
+                <div class="card-body bg-warning">
+                  <p class="card-text">15</p>
+                  <p class="name-player">FEDERICO VALVERDE</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-md-3">
+              <div class="card">
+                <img src="img/Player18.jpg" class="card-img-top" alt="...">
+                <div class="card-body bg-warning">
+                  <p class="card-text">18</p>
+                  <p class="name-player">A. TCHOUMENI</p>
+                </div>
+              </div>
+            </div>
+        
+            <div class="col-md-3">
+              <div class="card">
+                <img src="img/Player19.jpg" class="card-img-top" alt="...">
+                <div class="card-body bg-warning">
+                  <p class="card-text">19</p>
+                  <p class="name-player">DANI CEBALLOS</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="player-category">
+          <h3 class="text-center">Penyerang</h3>
+          <div class="row">
+            <div class="col-md-3">
+              <div class="card">
+              <img src="img/Player21.jpg" class="card-img-top" alt="...">
+              <div class="card-body bg-warning">
+                <p class="card-text">7</p>
+                <p class="name-player">VINICIUS JR</p>
+              </div>
+            </div>
+          </div>
+                
+            <div class="col-md-3">
+              <div class="card">
+              <img src="img/Player22.jpg" class="card-img-top" alt="...">
+              <div class="card-body bg-warning">
+                <p class="card-text">11</p>
+                <p class="name-player">RODRYGO</p>
+              </div>
+            </div>
+          </div>
+                
+            <div class="col-md-3">
+              <div class="card">
+              <img src="img/Player23.jpg" class="card-img-top" alt="...">
+              <div class="card-body bg-warning">    
+                <p class="card-text">14</p>
+                <p class="name-player">JOSELU</p>
+              </div>
+            </div>
+          </div>
+            
+            <div class="col-md-3">
+              <div class="card">
+              <img src="img/Player24.jpg" class="card-img-top" alt="...">
+              <div class="card-body bg-warning">
+                <p class="card-text">21</p>
+                <p class="name-player">BRAHIM D</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <!-- footer -->
+    <footer class="bg-body-tertiary p-2 text-center">
+      <div class="container">
+        <section class="mb-4">
+          <a class="btn" href="https://www.instagram.com/realmadrid/?hl=id">
+            <img src="img/bxl-instagram.svg" alt="">
+          </a>
+
+          <a class="btn" href="https://x.com/realmadrid?s=20">
+            <img src="img/bxl-twitter.svg" alt="">
+          </a>
+
+          <a class="btn" href="https://www.youtube.com/channel/UCWV3obpZVGgJ3j9FVhEjF2Q">
+            <img src="img/bxl-youtube.svg" alt="">
+          </a>
+
+          <a class="btn" href="https://web.facebook.com/RealMadrid">
+            <img src="img/bxl-facebook-square.svg" alt="">
+          </a>
+        </section>
+      </div>
+      <div class="text-center text-light p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2020 Copyright:
+        <a class="text-light" href="#">©2023 Real Madrid Ltd</a>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>

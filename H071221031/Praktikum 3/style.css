@@ -1,0 +1,17 @@
+.card-body p.card-text {
+  color: grey;
+  font-size: 20px;
+  text-align: center;
+}
+
+
+.card-body p.name-player {
+  color: black;
+  font-size: 20px;
+  text-align: center;
+}
+
+.card{
+  background-color: black;
+  color: white;
+}
