@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo+Play:slnt,wght@-8,1000&display=swap');
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('asets/baground.jpg');
+    background-size: cover;
+    color: white;
+    
+}
+
+/* p {
+    font-family: sans-serif;
+    font-size: 16;
+} */
+
+h1 {
+    font-size: 40px;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-family: 'Cairo Play', sans-serif;
+    /* background-color: aquamarine; */
+    /* margin-bottom: 80px; */
+}
+
+h2 {
+    font-size: 22px;
+    /* text-align: center; */
+    font-family: 'Cairo Play', sans-serif;
+    /* background-color: blueviolet; */
+    margin-top: 0px;
+
+}
+
+.Computer {
+    /* align-items: center; */
+    height: 85px;
+    margin-bottom: 50px;
+    /* background-color: blueviolet; */
+}
+
+.bot-cards .hidden-card {
+    height: 80px;
+    margin-bottom: 0px;
+}
+
+.my-cards .hidden-card {
+    height: 80px;
+    margin-bottom: 0px;
+}
+
+.bot-cards .my-sums {
+    margin-top: 5px;
+    padding: 0px;
+}
+
+.player {
+    height: 150px;
+    margin-bottom: 30px;
+}
+
+#btn-start-game {
+    /* stroke-width: 0%; */
+    background-color: green;
+    height: 40px;
+    width: 100px;
+    border-radius: 8px;
+    color: white;
+    border-color: rgb(0, 56, 0);
+    cursor: pointer;
+}
+
+
+#hit-button {
+    background-color: yellow;
+    height: 40px;
+    width: 100px;
+    border-radius: 8px;
+    /* color: white; */
+    /* border: none; */
+    border-color: rgb(0, 56, 0);
+    cursor: pointer;
+}
+
+#stand-button {
+    background-color: red;
+    height: 40px;
+    width: 100px;
+    border-radius: 8px;
+    color: white;
+    border-color: rgb(0, 56, 0);
+    cursor: pointer;
+}
+
+.bit {
+    margin-bottom: 10px;
+}
+
+#result-image {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: showResult 1s ease forwards;
+}
+
+@keyframes showResult {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+

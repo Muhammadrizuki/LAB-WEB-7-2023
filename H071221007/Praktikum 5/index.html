@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlackJack 77</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <center>
+        <div class="judul">
+            <h1>
+                BlackJack 77
+            </h1>
+        </div>
+        <div class="container">
+            <h2>Computer</h2>
+            <div class="Computer">
+                <div class="bot-cards">
+                    <img class="hidden-card" src="asets/cards/BACK.png" alt="" />
+                    <h3>Sums: <span class="bot-sums"></span></h3>
+                </div>
+            </div>
+            <div class="player">
+                <h2>Player</h2>
+                <div class="my-cards"></div>
+                <h3>Sums: <span class="my-sums"></span></h3>
+            </div>
+            <p id="result"></p>
+            <p>BALANCE : Rp. <span id="my-money">5000</span></p>
+            <input type="number" class="bit" required />
+            <div id="actions">
+                <button id="btn-start-game">START</button>
+                <button id="hit-button">HIT</button>
+                <button id="stand-button">STAND</button>
+            </div>
+            <!-- Tambahkan elemen gambar untuk menampilkan hasil -->
+            <div id="result-display" style="display: none;">
+                <img id="result-image" src="" alt="" style="height: 200px;">
+                <p id="result-message"></p>
+            </div>
+        </div>
+    </center>
+
+    <script src="script.js"></script>
+</body>
+</html>
