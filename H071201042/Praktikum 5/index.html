@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blackjack</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/css/bootstrap.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container text-center" id="main-menu">
+        <h1 class="mt-5">Blackjack</h1>
+
+        <div class="my-5 button" id="start-button">
+            <button class="button bg-primary" id="play" onclick="play()"> Play </button>
+        </div>
+
+        <div class="button" id="about">
+            <button class="button bg-primary"> About </button>
+        </div>
+    </div>
+
+    <div class="container" id="player" hidden>
+        <div>
+            <div class="my-5 button text-center" id="btn1player">
+                <button class="button bg-primary col-md-3" id="1p" onclick="sumPlayer(1)"> 1 Player </button>
+            </div>
+
+            <div class="button text-center" id="btn2player">
+                <button class="button bg-primary col-md-3" id="2p" onclick="sumPlayer(2)"> 2 Player </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="nickname" hidden>
+            <div class="button text-center" id="mulai">
+                <button class="button bg-primary col-md-3 my-3" id="btnMulai" onclick="mulai()"> Mulai
+                </button>
+            </div>
+    </div>
+
+    <div class="container" id="conKartu" hidden>
+        <div class="row">
+            <div class="col-6">
+                <h3 id="sisaKartu">Sisa kartu:</h3>
+            </div>
+            <div class="col-6" id="exit">
+                <button type="button" class="btn btn-dark btn-circle btn-xl" id="exitbtn" hidden>Exit</button>
+                <button type="button" class="btn btn-primary" id="start" onclick="mulai()" hidden>main lagi</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="bandar" hidden>
+        <div class="col-6">
+            <div id="kartuB">
+                <h3>kartu bandar:</h3>
+            </div>
+            <h3 id="Sbandar">Jumlah kartu Bandar:</h3>
+        </div>
+    </div>
+
+    <div class="container" id="conPlayer" hidden>
+        <div class="row">
+            <div class="col-6" id="playerr1">
+                <div id="kartuP1">
+                    <h3>kartu p1:</h3>
+                </div>
+                <h3 id="sumP1">Jumlah:</h3>
+                <div>
+                    <h3>Uang Anda</h3>
+                    <h3 id="uang1">5000</h3>
+
+                    <button type="button" class="btn btn-primary" id="reset1" onclick="reset(1)">Reset Money</button>
+                </div>
+                <div>
+                    <h3>Jumlah Taruhan:</h3>
+                    <h3 id="taruhan1">0</h3>
+                </div>
+                <div class="container mx-auto text-center" style="width:400px" id="player1Taruhan">
+                    <h3>Silahkan Pasang Taruhan</h3>
+                    <button type="button" class="btn btn-primary" id="resetTaruhan1">Reset</button>
+                    <button type="button" class="btn btn-success btn-circle btn-xl" id="1001">100</button>
+                    <button type="button" class="btn btn-danger btn-circle btn-xl" id="5001">500</button>
+                    <button type="button" class="btn btn-warning btn-circle btn-xl" id="10001">1k</button>
+                    <button type="button" class="btn btn-dark btn-circle btn-xl" id="allIn1">All In</button>
+                    <button type="button" class="btn btn-dark btn-circle btn-xl" id="pasang1"
+                        onclick="sumPasang(1)">Pasang</button>
+                </div>
+
+                <div class="container text-center" id="action1" hidden>
+                    <button type="button" class="btn btn-warning btn-circle btn-xl" id="stand1"
+                        onclick="stand(1)">Stand</button>
+                    <button type="button" class="btn btn-primary" id="ambil1" onclick="tambah(1)">Take Card</button>
+                    <h3 id="kondisi"></h3>
+                </div>
+            </div>
+            <div class="col-6" id="playerr2">
+                <div id="kartuP2">
+                    <h3>kartu p2:</h3>
+                </div>
+                <h3 id="sumP2">Jumlah:</h3>
+                <div>
+                    <h3>Uang Anda</h3>
+                    <h3 id="uang2">5000</h3>
+
+                    <button type="button" class="btn btn-primary" id="reset2" onclick="reset(2)" hidden>Reset
+                        Money</button>
+                </div>
+                <div>
+                    <h3>Jumlah Taruhan:</h3>
+                    <h3 id="taruhan2">0</h3>
+                </div>
+                <div class="container mx-auto text-center" style="width:400px" id="player2Taruhan">
+                    <h3>Silahkan Pasang Taruhan</h3>
+                    <button type="button" class="btn btn-primary" id="resetTaruhan2">Reset</button>
+                    <button type="button" class="btn btn-success btn-circle btn-xl" id="1002">100</button>
+                    <button type="button" class="btn btn-danger btn-circle btn-xl" id="5002">500</button>
+                    <button type="button" class="btn btn-warning btn-circle btn-xl" id="10002">1k</button>
+                    <button type="button" class="btn btn-dark btn-circle btn-xl" id="allIn2">All In</button>
+                    <button type="button" class="btn btn-dark btn-circle btn-xl" id="pasang2"
+                        onclick="sumPasang(2)">Pasang</button>
+                </div>
+
+                <div class="container text-center" id="action2" hidden>
+
+                    <button type="button" class="btn btn-warning btn-circle btn-xl" id="stand2"
+                        onclick="stand(2)">Stand</button>
+                    <button type="button" class="btn btn-primary" id="ambil2" onclick="tambah(2)">Take Card</button>
+                    <h3 id="kondisi"></h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="exit" hidden>
+        <div class="container mx-auto text-center" style="width:400px" id="Exit">
+            <button type="button" class="btn btn-dark btn-circle btn-xl" id="exitbtn">Exit</button>
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
